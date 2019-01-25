@@ -1,0 +1,73 @@
+html {
+    background: url('https://images.unsplash.com/photo-1532469342119-c1ac6eb66912?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+}
+
+.clock-wrapper {
+    font-size: 36px;
+    display: flex;
+    flex: 1;
+    min-height: 1vh;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0px 0px 6px #1B717D;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 1rem;
+    -webkit-box-shadow: 0px 0px 19px 3px rgba(27,114,125,1);
+    -moz-box-shadow: 0px 0px 19px 3px rgba(27,114,125,1);
+    box-shadow: 0px 0px 19px 3px rgba(27,114,125,1);
+}
+
+.clock-hand {
+    width: 50%;
+    height: 6px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.28, 1.29, 0.58, 1);
+}
+
+.hours-hand {
+    height: 8px;
+}
+
+.seconds-hand {
+    height: 3px;
+}
+
+.center {
+    position: absolute; 
+    top: 174px; 
+    left: 172px; 
+    width: 17px; 
+    height: 17px; 
+    background: white; 
+    border-radius: 16px;
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
